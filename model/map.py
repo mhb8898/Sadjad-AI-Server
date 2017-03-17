@@ -1,7 +1,7 @@
 
 from enum import Enum
 from random import choice
-
+import json
 
 N=10
 
@@ -10,12 +10,26 @@ class color(Enum):
     blue=2
     yellow=3
     black=4
-    orange=5
+    green=5
     # pig=7
     # giant_pig=8
     # rock=9
     # wood=10
     # glass=11
+
+
+class rock(Enum):
+    rock=9
+    wood=10
+    glass=11
+
+class ColorEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj,color):
+            return {"color": obj.name}
+        return json.JSONEncoder.default(self, obj)
+
+
 def check(t,i,j,map):
     if 0<=i<N and 0<=j<N and map[i][j] is t:
         print i,j,t,map[i][j]
@@ -66,3 +80,5 @@ class Map:
                 while i+start<N and self.map[i+start][j] is None:
                     start+=1
                 self.shift(i,j,start)
+    def to_json(self):
+        return json.dumps(self.map,cls=ColorEncoder)

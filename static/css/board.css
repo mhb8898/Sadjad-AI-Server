@@ -1,0 +1,23 @@
+table{
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+.red{
+  background-color: red;
+}
+.black{
+  background-color: black;
+}
+.white{
+  background-color: white;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+.green{
+  background-color: green;
+}
