@@ -1,23 +1,40 @@
 table{
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
   margin: 0 auto;
+  border-spacing: 0px;
+  border: 0px;
+}
+td{
+  padding: 0px;
 }
 .red{
-  background-color: red;
+  background: url('/static/image/red.png');
+  background-size: 100%;
 }
 .black{
-  background-color: black;
+  background: url('/static/image/black.png');
+  background-size: 100%;
 }
 .white{
-  background-color: white;
+  background: url('/static/image/white.png');
+  background-size: 100%;
 }
 .blue{
-  background-color: blue;
+  background: url('/static/image/blue.png');
+  background-size: 100%;
 }
 .yellow{
-  background-color: yellow;
+  background: url('/static/image/yellow.png');
+  background-size: 100%;
 }
 .green{
-  background-color: green;
+  background: url('/static/image/green.png');
+  background-size: 100%;
+}
+.selected{
+  background-color: black;
+}
+.glass{
+  background-color: blue;
 }
