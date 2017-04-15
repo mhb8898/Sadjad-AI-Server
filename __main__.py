@@ -36,7 +36,7 @@ def init_game(token):
 
 @socketio.on('touch', namespace='/game')
 def touch(token,i,j):
-    print i,j
+    # print i,j
     game[token].touch(i,j)
     emit('result', {'data': game[token].to_json()},room=token)
     emit('result', {'data': game[token].to_json()})

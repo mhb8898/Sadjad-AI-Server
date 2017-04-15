@@ -9,6 +9,8 @@ function listen(token){
 
   socket.on('result', function(msg) {
       data=$.parseJSON(msg.data)
+      console.log(data);
+
       printBoard(data);
 
   });

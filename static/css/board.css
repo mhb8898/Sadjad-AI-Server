@@ -6,6 +6,7 @@ table{
   border: 0px;
 }
 td{
+  background-color: brown;
   padding: 0px;
 }
 .red{
@@ -33,8 +34,28 @@ td{
   background-size: 100%;
 }
 .selected{
-  background-color: black;
+  opacity: 0.5;
 }
 .glass{
-  background-color: blue;
+  background: url('/static/image/glass.jpg');
+  background-size: 100%;
+}
+.rock{
+  background: url('/static/image/rock.png');
+  background-size: 100%;
+}
+.wood{
+  background: url('/static/image/wood.png');
+  background-size: 100%;
+}
+.rocket{
+  background: url('/static/image/rocket_up.png');
+  background-size: 100%;
+}
+.bomb{
+  background: url('/static/image/bomb.jpg');
+  background-size: 100%;
+}
+.laser{
+  background-color: black;
 }

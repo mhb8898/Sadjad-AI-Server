@@ -35,7 +35,7 @@ class User(db.Model):
 
 class Board(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    map= db.Column(JsonType())
+    map= db.Column(JsonType)
 
 class Move(db.Model):
     id = db.Column(db.Integer, primary_key=True)
