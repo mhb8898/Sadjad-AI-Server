@@ -17,9 +17,8 @@ class JsonType(types.MutableType, types.TypeDecorator):
     def process_result_value(self, value, engine):
         if value:
             return jsonpickle.decode(value)
-        else:
-            # default can also be a list
-            return {}
+        # default can also be a list
+        return {}
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
